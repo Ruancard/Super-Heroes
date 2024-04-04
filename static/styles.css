@@ -142,7 +142,7 @@ main{
      background-image: url(../img/wonderwoman.webp);
 }
 .band_image{
-     width: 500px; 
+     width: 300px;
 }
 #img_marvel{
      width: 500px;
@@ -204,4 +204,20 @@ main{
 }
 .shiny{
      background-color: var(--active);
+}
+@media screen and (max-width: 480px) and (orientation: portrait) {
+     .image{
+          display: none;
+     }
+     .text{
+          flex-wrap:wrap;
+          padding-left: 10vw;
+          padding-right: 10vw;
+          max-width: 50vw;
+          text-align: left;
+          height: auto;
+          z-index: 1;
+          opacity: 1;
+          transition: all 2s;
+     }
 }
