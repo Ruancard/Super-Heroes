@@ -1,0 +1,206 @@
+@font-face {
+     font-family: 'runner' ;
+     src: url(../fonts/PG_Roof\ Runners.ttf) format('truetype'), url(../fonts/PG_Roof\ Runners_bold.ttf)  format('truetype'), url(../fonts/PG_Roof\ Runners_ital.ttf)  format('truetype');
+}
+:root{
+     --main-color: #14213D;
+     --secundary-color: #273B67;
+     --dc-color: #070511;
+     --marvel-color: #EC2427;
+     --text-color: #FFFFFF;
+     --active: #476CBE;
+}
+header{
+     position: fixed;
+     top: 4vh;
+     left: 4vh;
+     z-index: 10;
+}
+nav{
+     background-color: var(--secundary-color);
+     border-radius: 20px;
+     width: 13vh;
+     height: 92vh;
+     box-shadow: 3px 3px 17px 0px rgba(0,0,0,1);
+}
+.bar{
+     background-color: var(--text-color);
+     width: 10vh;
+     height: 0.3vh;
+     border-radius: 10px;
+     margin: 1.5vh;
+}
+.marvel_nav{
+     display: flex;
+     flex-direction: column;
+     gap: 3px;
+     padding: 1.5vh;
+}
+.marvel_icon{
+     width: 10vh;
+     height: 10vh;
+     border-radius: 20px;
+     background-color: var(--marvel-color);
+}
+.dc_nav{
+     display: flex;
+     flex-direction: column;
+     gap: 3px;
+     padding: 1.5vh;
+}
+.hero_icon{
+     width: 10vh;
+     height: 10vh;
+     border-radius: 50px;
+     background-color: var(--main-color);
+     background-repeat: no-repeat;
+     background-size: 10vh;
+}
+.heroes{
+     background-color: var(--main-color);
+}
+section{
+     align-items: center;
+     justify-content: center;
+     display: flex;
+     height: 100vh;
+     max-width: 100vw;
+     scroll-snap-align: start;
+     padding-left: 20vh;
+     text-align: right;
+}
+
+.text h1{
+     font-weight: bold;
+     font-size: 48px;
+}
+.text h2{
+     font-size: 16px;
+}
+main{
+     scroll-snap-type: y mandatory;
+     overflow-x: hidden;
+     overflow-y: scroll;
+     height: 100vh;
+     font-family: 'runner';
+     color: var(--text-color);
+}
+.marvel{
+     background-color: var(--marvel-color);
+}
+.dc{
+     background-color: var(--dc-color);
+}
+.marvel_icon{
+     width: 10vh;
+     height: 10vh;
+     border-radius: 20px;
+     background-color: var(--marvel-color);
+     background-image: url(../img/marvel.webp);
+     background-size: 15vh;
+     background-position: -20px 10px;
+     background-repeat: no-repeat;
+}
+.dc_icon{
+     width: 10vh;
+     height: 10vh;
+     border-radius: 20px;
+     background-color: var(--dc-color);
+     background-image: url(../img/dc.webp);
+     background-size: 8vh;
+     background-position: 10px 10px;
+     background-repeat: no-repeat;
+
+}
+.sec_ironman{
+     background-position: 0 15px;
+     background-image: url(../img/ironman.webp);
+}
+.sec_spiderman{
+     background-position: -5px 20px;
+     background-image: url(../img/spiderman.webp);
+}
+.sec_captainamerica{
+     background-position: -5px 10px;
+     background-size: 12vh;
+     background-image: url(../img/captainamerica.webp);
+}
+.sec_batman{
+     background-position: -42px 15px;
+     background-size: 20vh;
+     background-image: url(../img/batman.webp);
+}
+.sec_superman{
+     background-position: -50px 7px;
+     background-size: 20vh;
+     background-image: url(../img/Superman.webp);
+}
+.sec_wonderwoman{
+     background-position: -35px -15px;
+     background-size: 15vh;
+     background-image: url(../img/wonderwoman.webp);
+}
+.band_image{
+     width: 500px; 
+}
+#img_marvel{
+     width: 500px;
+}
+#img_dc{
+     width: 450px;
+}
+.hero_image{
+     height: 634px;
+     width: 300px; 
+}
+.hero_image img{
+     filter: drop-shadow(10px 10px 8px #000000);
+}
+#img_ironman{
+     height: 634px;
+     width: 259px;
+}
+#img_spiderman{
+     height: 634px;
+     width: 240.78px;
+}
+#img_captainamerica{
+     height: 634px;
+     width: 286.55px;
+}
+#img_superman{
+     height: 634px;
+     width: 382.71px;
+}
+#img_batman{
+     height: 603px;
+     width: 435px;
+}
+#img_wonderwoman{
+     height: 601px;
+     width: 319px;
+}
+.text{
+     max-width: 500px;
+     z-index: 1;
+     opacity: 0;
+     transform: translate(-100%);
+}
+.show_text{
+     opacity: 1;
+     transform: translate(0);
+     transition: all 2s;
+}
+.image{
+     opacity: 0;
+     transform: translate(100%);
+     transition: all 2s;
+}
+.show_img{
+     opacity: 1;
+     transform: translate(0);
+     transition: all 2s;
+}
+.shiny{
+     background-color: var(--active);
+}
