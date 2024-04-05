@@ -101,7 +101,7 @@ main{
      background-color: var(--marvel-color);
      background-image: url(../img/marvel.webp);
      background-size: 15vh;
-     background-position: -20px 10px;
+     background-position: -25px 10px;
      background-repeat: no-repeat;
 }
 .dc_icon{
