@@ -99,24 +99,24 @@ nav{
      margin-top: 20%;
      width: 10vh;
 }
-.sec_spiderman img{
+.spiderman img{
      margin-top: 10%;
      margin-left: -15%;
 }
-.sec_captainamerica img{
+.captainamerica img{
      margin-top: 10%;
      width: 12vh;
      margin-left: 15%;
 }
-.sec_batman img{
+.batman img{
      width: 20vh;
 }
-.sec_superman img{
+.superman img{
      margin-top: -0%;
      margin-left: -20%;
      width: 20vh;
 }
-.sec_wonderwoman img{
+.wonderwoman img{
      margin-left: -40%;
      margin-top: -30%;
      width: 20vh;
@@ -171,6 +171,9 @@ main{
 }
 .hero_image img{
      filter: drop-shadow(10px 10px 8px #000000);
+}
+.image{
+     max-height: 80vh;
 }
 #img_ironman{
      height: 634px;
