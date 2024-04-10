@@ -51,12 +51,75 @@ nav{
      padding: 1.5vh;
 }
 .hero_icon{
+     display: flex;
+     align-items: start;
+     justify-content: center;
+     overflow: hidden;
      width: 10vh;
      height: 10vh;
      border-radius: 50px;
      background-color: var(--main-color);
      background-repeat: no-repeat;
      background-size: 10vh;
+}
+.marvel_icon{
+     display: flex;
+     align-items: start;
+     justify-content: center;
+     overflow: hidden;
+     width: 10vh;
+     height: 10vh;
+     border-radius: 20px;
+     background-color: var(--marvel-color);
+     background-size: 15vh;
+     background-position: -20px 10px;
+     background-repeat: no-repeat;
+}
+.dc_icon{
+     display: flex;
+     justify-content: center;
+     overflow: hidden;
+     width: 10vh;
+     height: 10vh;
+     border-radius: 20px;
+     background-color: var(--dc-color);
+     background-size: 8vh;
+     background-position: 10px 10px;
+     background-repeat: no-repeat;
+}
+.sec_marvel img{
+     margin: auto;
+     width: 15vh;
+}
+.sec_dc img{
+     margin: auto;
+     width: 8vh;
+}
+.hero_icon img{
+     margin-top: 20%;
+     width: 10vh;
+}
+.sec_spiderman img{
+     margin-top: 10%;
+     margin-left: -15%;
+}
+.sec_captainamerica img{
+     margin-top: 10%;
+     width: 12vh;
+     margin-left: 15%;
+}
+.sec_batman img{
+     width: 20vh;
+}
+.sec_superman img{
+     margin-top: -0%;
+     margin-left: -20%;
+     width: 20vh;
+}
+.sec_wonderwoman img{
+     margin-left: -40%;
+     margin-top: -30%;
+     width: 20vh;
 }
 .heroes{
      background-color: var(--main-color);
@@ -71,7 +134,6 @@ section{
      padding-left: 20vh;
      text-align: right;
 }
-
 .text h1{
      font-weight: bold;
      font-size: 48px;
@@ -93,55 +155,6 @@ main{
 }
 .dc{
      background-color: var(--dc-color);
-}
-.marvel_icon{
-     width: 10vh;
-     height: 10vh;
-     border-radius: 20px;
-     background-color: var(--marvel-color);
-     background-image: url(../img/marvel.webp);
-     background-size: 15vh;
-     background-position: -25px 10px;
-     background-repeat: no-repeat;
-}
-.dc_icon{
-     width: 10vh;
-     height: 10vh;
-     border-radius: 20px;
-     background-color: var(--dc-color);
-     background-image: url(../img/dc.webp);
-     background-size: 8vh;
-     background-position: 10px 10px;
-     background-repeat: no-repeat;
-
-}
-.sec_ironman{
-     background-position: 0 15px;
-     background-image: url(../img/ironman.webp);
-}
-.sec_spiderman{
-     background-position: -5px 20px;
-     background-image: url(../img/spiderman.webp);
-}
-.sec_captainamerica{
-     background-position: -5px 10px;
-     background-size: 12vh;
-     background-image: url(../img/captainamerica.webp);
-}
-.sec_batman{
-     background-position: -42px 15px;
-     background-size: 20vh;
-     background-image: url(../img/batman.webp);
-}
-.sec_superman{
-     background-position: -55px 7px;
-     background-size: 20vh;
-     background-image: url(../img/superman.webp);
-}
-.sec_wonderwoman{
-     background-position: -35px -15px;
-     background-size: 15vh;
-     background-image: url(../img/wonderwoman.webp);
 }
 .band_image{
      width: 300px;
